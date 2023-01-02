@@ -5,7 +5,7 @@
  * check_cycle - function that checks for if a singlt list has a cycle
  *
  * @list: linked list to check
- * 
+ *
  * Return: 1 if the list has a cycle, 0 if it doesn't
  */
 
