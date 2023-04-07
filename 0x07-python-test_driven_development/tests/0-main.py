@@ -13,3 +13,7 @@ try:
     print(add_integer(None))
 except Exception as e:
     print(e)
+   
+if __name__ == "__main__":
+    import doctest
+    doctest.testmode("new.txt")
