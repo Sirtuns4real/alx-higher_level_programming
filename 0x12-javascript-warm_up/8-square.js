@@ -4,9 +4,9 @@ if (Number.isNaN(sizer)) {
   console.log('Missing size');
 } else {
   for (let i = 0, s; i < sizer; i++) {
-    sq = '';
+    s = '';
     for (let j = 0; j < sizer; j++) {
-      sq += 'X';
+      s += 'X';
     }
-    console.log(sq);
+    console.log(s);
   }
