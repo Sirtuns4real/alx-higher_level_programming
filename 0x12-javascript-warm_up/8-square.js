@@ -10,6 +10,6 @@ if (isNaN(size) || size <= 0 || !Number.isInteger(size)) {
     for (let c = 0; c < size; c++) {
       row += '*';
     }
-    console.log(row);
+    console.log(row.trim());
   }
 }
