@@ -1,11 +1,15 @@
 #!/usr/bin/node
-const sizer = Math.floor(Number(process.argv[2]));
-if (isNaN(sizer)) {
+
+const size = Math.floor(Number(process.argv[2]));
+
+if (isNaN(size) || size <= 0 || !Number.isInteger(size)) {
   console.log('Missing size');
 } else {
-  for (let r = 0; r < sizer; r++) {
-    let rw = '';
-    for (let c = 0; c < sizer; c++) rw += '*';
-    console.log(rw);
+  for (let r = 0; r < size; r++) {
+    let row = '';
+    for (let c = 0; c < size; c++) {
+      row += '*';
+    }
+    console.log(row);
   }
 }
