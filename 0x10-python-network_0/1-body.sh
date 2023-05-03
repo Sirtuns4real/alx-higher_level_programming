@@ -1,3 +1,3 @@
 #!/bin/bash
-# A bash Script that displays the response body redirecting /route_1
+# A bash Script that displays only body of 200 Status
 curl -Ls "$1"
