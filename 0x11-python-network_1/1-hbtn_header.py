@@ -13,10 +13,9 @@ def display_header_value(url):
     Sends a request to the given URL and displays the value of the X-Request-Id variable
     found in the header of the response.
     """
-    with urllib.request.urlopen(url) as response:
-        header = response.info()
-        if 'X-Request-Id' in header:
-            print(header.get('X-Request-Id'))
+    request = urllib.request.Request(url)
+    with urllib.request.urlopen(request) as response:
+        print(dict(response.headers).get("X-Request-Id"))
 
 
 if __name__ == '__main__':
