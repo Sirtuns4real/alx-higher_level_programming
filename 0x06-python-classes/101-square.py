@@ -67,7 +67,7 @@ class Square:
             [print("#", end="") for k in range(0, self.__size)]
             if i != self.__size - 1:
                 print("")
-        return ("")#!/usr/bin/python3
+        return ("")
 
 """Define a class Square."""
 
