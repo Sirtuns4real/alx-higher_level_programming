@@ -69,7 +69,7 @@ class Square:
                 print("")
         return ("")
 
-    
+
 """Define a class Square."""
 
 
